@@ -20,8 +20,9 @@
         </div>
         <div class="main-content">
             <div class="header">
-                <h2>Thông tin tài khoản</h2>
+                <h2 class="title">Thông tin tài khoản</h2>
                 <div class="user-info">
+                    <i></i>
                     <img src="images/avatarPTTN.png" alt="User Avatar">
                     <span>NgaPTT</span>
                 </div>
@@ -29,7 +30,55 @@
             <div class="user">
                 <img src="images/avatarPTTN.png" alt="anh">
                 <p>Phan Thi Thanh Nga</p>
-                <p>Admin</p>
+                <p>Giang Vien</p>
+            </div>
+            <div class="account-info">
+                <div class="account-info-header">
+                    <p>Thông tin tài khoản</p>
+                </div>
+                <div class="account-info-content">
+                    <p>Tên đăng nhập</p>
+                    <input type="text">
+                    <p>Mật khẩu đăng nhập</p>
+                    <input type="text">
+                    <p>Email đăng kí tài khoản</p>
+                    <input type="text">
+                    <button>Lưu</button>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Thông tin cá nhân</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" id="fullname" value="Dianne Adam" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Giới tính</label>
+                        <input type="text" id="gender" value="Nam" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Ngày sinh</label>
+                        <input type="text" id="birthdate" value="2/2/1994" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="id">CMND/CCCD</label>
+                        <input type="text" id="id" value="123456789" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="dianne.russell@gmail.com" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" value="(603) 555-0123" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" id="address" value="4140 Parker Rd. Allentown, New Mexico 31134" readonly>
+                    </div>
+                    <button type="submit">Lưu</button>
+                </form>
             </div>
         </div>
     </div>
