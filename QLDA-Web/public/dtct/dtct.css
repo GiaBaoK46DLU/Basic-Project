@@ -1,0 +1,149 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;      
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #E0F5EC;
+    color: black;
+    padding: 20px;
+}
+.sidebar img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color: #E0F5EC;
+    
+}
+
+.menu-item {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.sidebar button{
+    border-color: #E0F5EC;
+    background-color: #E0F5EC;
+}
+.menu-item i {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+}
+
+.title {
+    padding-left: 50px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+.user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.under-header {
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    left: 1300px;
+    top: 70px;
+}
+
+.content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    position: absolute;
+    width: 900px;
+    height: 700px;
+    left: 650px;
+    top: 131px;
+}
+
+.content-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flexbox;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+}
+
+.student-doing {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flexbox;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+}
+.information {
+    display: flexbox;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.student-choose {
+    display: flexbox;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.student-list {
+    list-style: none;
+    padding: 0;
+}
+
+.student-item {
+    margin-bottom: 10px;
+}
+
+.content button {
+    background-color: #B13A3A;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 730px;
+}
