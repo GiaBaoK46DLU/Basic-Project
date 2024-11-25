@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Quản lý đồ án - Đăng nhập</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Link Font Awesome để sử dụng biểu tượng -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <!-- Link file CSS -->
   <link rel="stylesheet" href="login2.css">
 </head>
 <body>
@@ -16,30 +19,36 @@
       <h2 class="title">Đăng nhập</h2>
       <form action="" id="form-login">
         <div class="form-group">
-          <label class="account" >E-mail hoặc số điện thoại</label>
+          <label class="account">E-mail hoặc số điện thoại</label>
           <input type="text" id="email" name="email" placeholder="Nhập E-mail hoặc số điện thoại">
         </div>
         <div class="form-group">
           <label class="password">Mật khẩu</label>
-          <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
-          <span class="password-toggle">
-            <i class="fa fa-eye"></i>
-          </span>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+            <span class="password-toggle">
+              <i class="fa fa-eye"></i>
+            </span>
+          </div>
         </div>
-        <!-- <a href="#" class="forgot-password">Quên mật khẩu?</a> -->
         <button type="submit" class="login-button">Đăng nhập</button>
         <div class="separator">
           <span>HOẶC</span>
         </div>
-        <button type="button" class="google-login">
+        <!-- type="button" -->
+        <button  class="google-login">
           <img src="../login2/logogg.png" alt="Google Logo"> Đăng nhập bằng Google
         </button>
       </form>
     </div>
   </div>
 
+  <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth-compat.js"></script>
-  <script src="login2.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <!-- Link file JS -->
+  <script src="login2.js"></script>
 </body>
 </html>
