@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_project_GV.css">
+    <title>Đề tài của tôi</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo"><img src="../images/logo.png" alt=""></div>
+        <div class="menu-item"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                </svg></i> Thông tin</div>
+        <div class="menu-item"><i>📄</i> Đề tài</div>
+        <div class="menu-item"><i>📁</i> Đề tài của tôi</div>
+        <div class="menu-item"><i>👁️</i> Chấm điểm & nhận xét</div>
+    </div>
+    <div class="header">
+        <h2 class="title">Danh sách đề tài</h2>
+        <div class="user-info">
+            <img src="../images/avatarPTTN.png" alt="User Avatar">
+            <span>NgaPTT</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm">
+            <button class="add-btn">Thêm đề tài</button>
+            <div class="modal hide">
+                <div class="modal_inner">
+                    <div class="modal_header">
+                        <p>THÊM ĐỀ TÀI</p>
+                    </div>
+                    <div class="modal_body">
+                        <label for="ten-de-tai">Tên đề tài:</label>
+                        <input type="text" id="ten-de-tai" name="ten-de-tai">
+
+                        <label for="mo-ta">Mô tả đề tài:</label>
+                        <textarea id="mo-ta" name="mo-ta" rows="4"></textarea>
+
+                        <label for="sinh-vien">Sinh viên thực hiện:</label>
+                        <input type="text" id="sinh-vien" name="sinh-vien">
+
+                        <label for="tham-khao">Thông tin tham khảo:</label>
+                        <textarea id="tham-khao" name="tham-khao" rows="2"></textarea>
+
+                        <label for="lien-he">Liên hệ GV:</label>
+                        <input type="text" id="lien-he" name="lien-he">
+
+                        <label for="dang-ky">Sinh viên đăng ký đề tài:</label>
+                        <textarea id="dang-ky" name="dang-ky" rows="2"></textarea>
+                    </div>
+                    <div class="modal_footer">
+                        <button type="submit">Lưu</button>
+                        <button class="close">Hủy</button>
+                    </div>
+                </div>
+            </div>
+            <select>
+                <option>2024 - 2025</option>
+                <option>2023 - 2024</option>
+                <option>2022 - 2023</option>
+                <option>2021 - 2022</option>
+            </select>
+            <select>
+                <option>Học kỳ 1</option>
+                <option>Học kỳ 2</option>
+            </select>
+            <select>
+                <option>Đồ án cơ sở</option>
+                <option>Đồ án chuyên ngành</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên đề tài</th>
+                    <th>Mô tả đề tài</th>
+                    <th>SL sinh viên/nhóm<br>(2 hoặc 3)</th>
+                    <th>Tài liệu tham khảo</th>
+                    <th>Sinh viên đăng ký<br>(MSSV - Họ và tên)</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody class="table-content">
+                <!-- JavaScript will insert rows here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="my_project_GV.js"></script>
+    <script src="pop_up.js"></script>
+    <script src="add.js"></script>
+</body>

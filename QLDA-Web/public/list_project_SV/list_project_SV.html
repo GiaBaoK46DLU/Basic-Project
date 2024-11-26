@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dtctGV.css">
-    <title>Đề tài của tôi</title>
+    <link rel="stylesheet" href="list_project_SV.css">
+    <title>Danh sách đề tài</title>
 </head>
 
 <body>
+    <!-- <div class="container"> -->
     <div class="sidebar">
         <div class="logo"><img src="../images/logo.png" alt=""></div>
         <div class="menu-item"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -31,7 +32,6 @@
     <div class="main-content">
         <div class="search-bar">
             <input type="text" placeholder="Tìm kiếm">
-            <button class="add-btn">Thêm đề tài</button>
             <select>
                 <option>2024 - 2025</option>
                 <option>2023 - 2024</option>
@@ -47,5 +47,27 @@
                 <option>Đồ án chuyên ngành</option>
             </select>
         </div>
+        <p class="notice"><b> Lưu ý: Sinh viên chỉ có thể đăng ký 1 đề tài (trừ trường hợp đã qua trao đổi với giảng
+                viên có thẩm quyền)</b></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên đề tài</th>
+                    <th>Mô tả đề tài</th>
+                    <th>SL sinh viên/nhóm<br>(2 hoặc 3)</th>
+                    <th>Tài liệu tham khảo</th>
+                    <th>Giảng viên hướng dẫn</th>
+                    <th>Sinh viên đăng ký<br>(MSSV - Họ và tên)</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody class="table-content">
+                <!-- JavaScript will insert rows here -->
+            </tbody>
+        </table>
     </div>
+    <script src="list_project_SV.js"></script>
 </body>
+
+</html>

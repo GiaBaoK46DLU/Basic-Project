@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_project_SV.css">
+    <title>Đề tài của tôi</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"><img src="../images/logo.png" alt=""></div>
+        <div class="menu-item"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                </svg></i> Thông tin</div>
+        <div class="menu-item"><i>📄</i> Đề tài</div>
+        <div class="menu-item"><i>📁</i> Đề tài của tôi</div>
+        <div class="menu-item"><i>👁️</i> Chấm điểm & nhận xét</div>
+    </div>
+    <div class="header">
+        <h2 class="title">Đề tài của tôi</h2>
+        <div class="user-info">
+            <img src="../images/QHoc.jpg" alt="User Avatar">
+            <span> 2212375</span>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="tabs">
+            <button class="tab active">Đồ án đang thực hiện</button>
+            <button class="tab">Đồ án đã hoàn thành</button>
+        </div>
+
+        <div class="project-overview">
+            <h2>Đề tài: Xây dựng ứng dụng web quản lý đồ án</h2>
+            <div class="project-details">
+                <h3>Mô tả đề tài</h3>
+                <textarea readonly>
+- Ứng dụng phải có các tính năng cơ bản sau:
+- Quản lý tiến độ, chấm điểm, thành viên, sản phẩm.
+- Quản lý các giai đoạn đồ án và điểm thành phần.
+- Quản lý nhận xét, chấm điểm của giáo viên hướng dẫn, hội đồng GV/PGV, xuất điểm ra file Excel.
+                </textarea>
+            </div>
+
+            <div class="project-info">
+                <label>Sinh viên thực hiện:</label>
+                <input type="text" value="2-3" readonly>
+
+                <label>Thông tin tham khảo:</label>
+                <input type="text" value="Liên hệ GV | nvphong@tdtu.edu.vn" readonly>
+
+                <label>Sinh viên đăng ký đề tài:</label>
+                <textarea readonly>
+1. 2212345 - Triệu Quang Học - CTK46B
+2. 2212343 - Đinh Lâm Gia Bảo - CTK46B
+                </textarea>
+
+                <button class="btn-danger">Hủy đăng ký đề tài</button>
+            </div>
+        </div>
+
+        <div class="reports-section">
+            <div class="report-card">
+                <h3>Đề cương đề tài</h3>
+                <div class="content">
+                    <div class="file-section">
+                        <div class="file-upload">
+                            <p>File word/Điền thông tin</p>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn-save">Lưu</button>
+                            <button class="btn-delete">Xóa</button>
+                        </div>
+                        <p>Đã nộp vào: 19/02/2024</p>
+                    </div>
+                    <div class="feedback-section">
+                        <h4>Nhận xét - Đánh giá</h4>
+                        <textarea readonly></textarea>
+                        <p>Đã nhận xét vào: ..........</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat the same block for other reports -->
+            <div class="report-card">
+                <h3>Báo cáo lần 1</h3>
+                <div class="content">
+                    <div class="file-section">
+                        <div class="file-upload">
+                            <p>File word/Điền thông tin</p>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn-save">Lưu</button>
+                            <button class="btn-delete">Xóa</button>
+                        </div>
+                        <p>Đã nộp vào: ..........</p>
+                    </div>
+                    <div class="feedback-section">
+                        <h4>Nhận xét - Đánh giá</h4>
+                        <textarea readonly></textarea>
+                        <p>Đã nhận xét vào: ..........</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-card">
+                <h3>Sản phẩm hoàn thiện</h3>
+                <div class="content">
+                    <div class="file-section">
+                        <div class="file-upload">
+                            <p>File word/Điền thông tin</p>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn-save">Lưu</button>
+                            <button class="btn-delete">Xóa</button>
+                        </div>
+                        <p>Đã nộp vào: ..........</p>
+                    </div>
+                    <div class="feedback-section">
+                        <h4>Nhận xét - Đánh giá</h4>
+                        <textarea readonly></textarea>
+                        <p>Đã nhận xét vào: ..........</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+            
