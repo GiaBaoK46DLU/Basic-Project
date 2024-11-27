@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="login.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-        <title>Login</title>
-    </head>
-    <body>
-        
-        <div id="wrapper">
-            <form action="" id="form-login">
-                <h1 class="form-heading">Đăng nhập</h1>
-                <div class="form-group">
-                    <i class="far fa-user"></i>
-                    <input type="text" class="form-input" placeholder="Tên đăng nhập">
-                </div>
-                <div class="form-group">
-                    <i class="fas fa-key"></i>
-                    <input type="password" class="form-input" placeholder="Mật khẩu">
-                    <div id="eye">
-                        <i class="far fa-eye"></i>
-                    </div>
-                </div>
-                <input type="submit" value="Đăng nhập" class="form-submit">
-            </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Quản lý đồ án - Đăng nhập</title>
+  <!-- Link Font Awesome để sử dụng biểu tượng -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <!-- Link file CSS -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo"> 
+      </div>
+      <!-- <a href="../tttk/tttk.html">Liên hệ</a> -->
+      <h2 class="title">Đăng nhập</h2>
+      <form action="" id="form-login">
+        <div class="form-group">
+          <label class="account">E-mail hoặc số điện thoại</label>
+          <input type="text" id="email" name="email" placeholder="Nhập E-mail hoặc số điện thoại">
         </div>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="login.js"></script>
+        <div class="form-group">
+          <label class="password">Mật khẩu</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+            <span class="password-toggle">
+              <i class="fa fa-eye"></i>
+            </span>
+          </div>
+        </div>
+        <button type="submit" class="login-button">Đăng nhập</button>
+        <div class="separator">
+          <span>HOẶC</span>
+        </div>
+        <!-- type="button" -->
+        <button  class="google-login">
+          <img src="../images/logogg.png" alt="Google Logo"><a href="../account_info/account_info.html">Đăng nhập bằng google</a>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth-compat.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <!-- Link file JS -->
+  <script src="login.js"></script>
+</body>
 </html>

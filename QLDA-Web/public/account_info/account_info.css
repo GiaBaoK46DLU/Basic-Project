@@ -194,3 +194,8 @@ body, html {
 .form-container button:hover {
     background-color: #008f5b;
 }
+
+.menu-link {
+        text-decoration: none;
+        color: black;
+}
