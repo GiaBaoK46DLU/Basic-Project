@@ -8,21 +8,38 @@
     <title>Đề tài của tôi</title>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo"> <a href="../account_info/account_info.html"><img src="../images/logo.png" alt=""></a></div>
-        <div class="menu-item"><i class="fa-regular fa-user"></i> Thông tin</div>
-        <div class="menu-item"><i class="fa-solid fa-list"></i></i> Đề tài</div>
-        <div class="menu-item"><i class="fa-regular fa-file"></i> Đề tài của tôi</div>
-        <div class="menu-item"><i class="fa-solid fa-pencil"></i> Chấm điểm & nhận xét</div>
-        <div class="menu-item"><i class="fa-solid fa-bell"></i> Thông báo</div>
-    </div>
-    <div class="header">
-        <h2 class="title">Đề tài của tôi</h2>
-        <div class="user-info">
-            <img src="../images/QHoc.jpg" alt="User Avatar">
-            <span> 2212375</span>
-        </div>
-    </div>
+    <header class="header">
+        <img src="../images/logo.png" alt="" class="logo-pic">
+        <div class="info"><a href="../account_info/account_info.html">Thông tin tài khoản</a></div>
+        <div class="user-profile">
+            <div class="user-avatar">QH</div>
+            <div class="user-info">
+                <div class="user-name">Triệu Quang Học</div>
+                <div class="user-role">Sinh viên</div>
+            </div>
+    </header>
+
+    <nav class="sidebar">
+        <button class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <a href="../account_info/account_info.html" class="menu-item active" data-tooltip="Thông tin">
+            <i class="fa-regular fa-user"></i>
+            <span>Thông tin</span>
+        </a>
+        <a href="../list_project_GV/list_project_GV.html" class="menu-item" data-tooltip="Đề tài">
+            <i class="fa-solid fa-list"></i>
+            <span>Đề tài</span>
+        </a>
+        <a href="../my_project_GV/my_project_GV.html" class="menu-item" data-tooltip="Đề tài của tôi">
+            <i class="fa-regular fa-file"></i>
+            <span>Đề tài của tôi</span>
+        </a>
+        <a href="#" class="menu-item" data-tooltip="Chấm điểm & nhận xét">
+            <i class="fa-solid fa-pencil"></i>
+            <span>Chấm điểm & nhận xét</span>
+        </a>
+    </nav>
     
     <div class="main-content">
         <div class="tabs">
@@ -31,28 +48,28 @@
         </div>
 
         <div class="project-overview">
-            <h2>Đề tài: Xây dựng ứng dụng web quản lý đồ án</h2>
+            <h2>Đề tài: <h2 id="ten"></h2></h2>
             <div class="project-details">
-                <h3>Mô tả đề tài</h3>
-                <textarea readonly>
-- Ứng dụng phải có các tính năng cơ bản sau:
-- Quản lý tiến độ, chấm điểm, thành viên, sản phẩm.
-- Quản lý các giai đoạn đồ án và điểm thành phần.
-- Quản lý nhận xét, chấm điểm của giáo viên hướng dẫn, hội đồng GV/PGV, xuất điểm ra file Excel.
-                </textarea>
+                <label>Mô tả đề tài</label>
+                <p readonly id="moTa">
+                </p>
             </div>
 
             <div class="project-info">
                 <label>Sinh viên thực hiện:</label>
-                <input type="text" value="2-3" readonly>
+                <textarea readonly id="soLuongSV">
+                </textarea>
 
                 <label>Thông tin tham khảo:</label>
-                <input type="text" value="Liên hệ GV | nvphong@tdtu.edu.vn" readonly>
+                <textarea readonly id="taiLieuTK">
+                </textarea>
+                
+                <label>Giảng viên hướng dẫn</label>
+                <textarea readonly id="gvhd">
+                </textarea>
 
                 <label>Sinh viên đăng ký đề tài:</label>
-                <textarea readonly>
-1. 2212345 - Triệu Quang Học - CTK46B
-2. 2212343 - Đinh Lâm Gia Bảo - CTK46B
+                <textarea readonly id="svdk">
                 </textarea>
 
                 <button class="btn-danger">Hủy đăng ký đề tài</button>
@@ -125,5 +142,6 @@
             </div>
         </div>
     </div>
+    <script type="module" src="my_project_SV.js"></script>
 </body>
             

@@ -8,24 +8,40 @@
     <title>Account Information</title>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="logo"> <a class="menu-link" href="../account_info/account_info.html"><img src="../images/logo.png" alt=""></a></div>
-            <div class="menu-item"><a class="menu-link" href="../account_info/account_info.html"><i class="fa-regular fa-user"></i> Thông tin</a></div>
-            <div class="menu-item"><a class="menu-link" href="../list_project_GV/list_project_GV.html"><i class="fa-solid fa-list"></i>Đề tài</a></div>
-            <div class="menu-item"><a class="menu-link" href="../my_project_GV/my_project_GV.html"><i class="fa-regular fa-file"></i> Đề tài của tôi</a></div>
-            <div class="menu-item"><a class="menu-link" href=""><i class="fa-solid fa-pencil"></i> Chấm điểm & nhận xét</a></div>
-            <div class="menu-item"><a class="menu-link" href=""><i class="fa-solid fa-bell"></i> Thông báo</a></div>
-        </div>
-        <div class="main-content">
-            <div class="header">
-                <h2 class="title">Thông tin tài khoản</h2>
-                <div class="user-info">
-                    <i></i>
-                    <img src="../images/avatarPTTN.png" alt="User Avatar">
-                    <span>NgaPTT</span>
-                </div>
+    <header class="header">
+        <img src="../images/logo.png" alt="" class="logo-pic">
+        <div class="info"><a href="../account_info/account_info.html">Thông tin tài khoản</a></div>
+        <div class="user-profile">
+            <div class="user-avatar">TN</div>
+            <div class="user-info">
+                <div class="user-name">Phan Thị Thanh Nga</div>
+                <div class="user-role">Giảng viên</div>
             </div>
+    </header>
+
+    <nav class="sidebar">
+        <button class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <a href="../account_info/account_info.html" class="menu-item active" data-tooltip="Thông tin">
+            <i class="fa-regular fa-user"></i>
+            <span>Thông tin</span>
+        </a>
+        <a href="../list_project_GV/list_project_GV.html" class="menu-item" data-tooltip="Đề tài">
+            <i class="fa-solid fa-list"></i>
+            <span>Đề tài</span>
+        </a>
+        <a href="../my_project_GV/my_project_GV.html" class="menu-item" data-tooltip="Đề tài của tôi">
+            <i class="fa-regular fa-file"></i>
+            <span>Đề tài của tôi</span>
+        </a>
+        <a href="#" class="menu-item" data-tooltip="Chấm điểm & nhận xét">
+            <i class="fa-solid fa-pencil"></i>
+            <span>Chấm điểm & nhận xét</span>
+        </a>
+    </nav>
+    <div class="container">
+        <div class="main-content">
             <div class="user">
                 <img src="../images/avatarPTTN.png" alt="anh">
                 <p>Phan Thi Thanh Nga</p>
@@ -86,5 +102,6 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

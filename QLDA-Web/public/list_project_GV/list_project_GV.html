@@ -10,22 +10,38 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
-    <div class="sidebar">
-        <div class="logo"> <a href="../account_info/account_info.html"><img src="../images/logo.png" alt=""></a></div>
-        <div class="menu-item"><i class="fa-regular fa-user"></i> Thông tin</div>
-        <div class="menu-item"><i class="fa-solid fa-list"></i></i> Đề tài</div>
-        <div class="menu-item"><i class="fa-regular fa-file"></i> Đề tài của tôi</div>
-        <div class="menu-item"><i class="fa-solid fa-pencil"></i> Chấm điểm & nhận xét</div>
-        <div class="menu-item"><i class="fa-solid fa-bell"></i> Thông báo</div>
-    </div>
-    <div class="header">
-        <h2 class="title">Danh sách đề tài</h2>
-        <div class="user-info">
-            <img src="../images/avatarPTTN.png" alt="User Avatar">
-            <span>NgaPTT</span>
-        </div>
-    </div>
+    <header class="header">
+        <img src="../images/logo.png" alt="" class="logo-pic">
+        <div class="info"><a href="../account_info/account_info.html">Thông tin tài khoản</a></div>
+        <div class="user-profile">
+            <div class="user-avatar">TN</div>
+            <div class="user-info">
+                <div class="user-name">Phan Thị Thanh Nga</div>
+                <div class="user-role">Giảng viên</div>
+            </div>
+    </header>
+
+    <nav class="sidebar">
+        <button class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <a href="../account_info/account_info.html" class="menu-item active" data-tooltip="Thông tin">
+            <i class="fa-regular fa-user"></i>
+            <span>Thông tin</span>
+        </a>
+        <a href="../list_project_GV/list_project_GV.html" class="menu-item" data-tooltip="Đề tài">
+            <i class="fa-solid fa-list"></i>
+            <span>Đề tài</span>
+        </a>
+        <a href="../my_project_GV/my_project_GV.html" class="menu-item" data-tooltip="Đề tài của tôi">
+            <i class="fa-regular fa-file"></i>
+            <span>Đề tài của tôi</span>
+        </a>
+        <a href="#" class="menu-item" data-tooltip="Chấm điểm & nhận xét">
+            <i class="fa-solid fa-pencil"></i>
+            <span>Chấm điểm & nhận xét</span>
+        </a>
+    </nav>
     <div class="main-content">
         <div class="search-bar">
             <input type="text" placeholder="Tìm kiếm">
