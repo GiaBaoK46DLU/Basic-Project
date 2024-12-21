@@ -34,12 +34,14 @@ document.addEventListener("DOMContentLoaded", async function() {
                 const moTa = data.MoTa ? data.MoTa.join("<br>") : "Chưa có mô tả";  // Convert array to HTML with line breaks
                 const soLuongSV = data.SoLuongSV || "Chưa có số lượng";  // Default value if undefined
                 const taiLieuTK = data.TaiLieuTK || "Chưa có tài liệu"; // Default value if undefined
+                const loaiDoAn = data.LoaiDoAn || "Chưa có loại đồ án"; 
 
                 // Format SVDK content
                 let svdkContent = "(Trống)";
                 if (data.SVDK && Array.isArray(data.SVDK) && data.SVDK.length > 0) {
                     svdkContent = data.SVDK.join("<br>");
                 }
+
 
                 // Create a new row for the table
                 const row = document.createElement("tr");
@@ -49,6 +51,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                     <td>${moTa}</td>
                     <td>${soLuongSV}</td>
                     <td>${taiLieuTK}</td>
+                    <td>${loaiDoAn}</td>
                     <td class="status">${svdkContent}</td>
                     <td class="button-group">
                         <button class="details-btn">Xem chi tiết</button>

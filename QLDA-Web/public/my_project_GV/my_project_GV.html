@@ -25,7 +25,7 @@
         <button class="sidebar-toggle" id="sidebarToggle">
             <i class="fas fa-chevron-left"></i>
         </button>
-        <a href="../account_info/account_info.html" class="menu-item" data-tooltip="Thông tin">
+        <a href="../account_info_GV/account_info_GV.html" class="menu-item" data-tooltip="Thông tin">
             <i class="fa-regular fa-user"></i>
             <span>Thông tin</span>
         </a>
@@ -36,10 +36,6 @@
         <a href="../my_project_GV/my_project_GV.html" class="menu-item active" data-tooltip="Đề tài của tôi">
             <i class="fa-regular fa-file"></i>
             <span>Đề tài của tôi</span>
-        </a>
-        <a href="#" class="menu-item" data-tooltip="Chấm điểm & nhận xét">
-            <i class="fa-solid fa-pencil"></i>
-            <span>Chấm điểm & nhận xét</span>
         </a>
     </nav>
    
@@ -70,7 +66,7 @@
                             <textarea id="dang-ky" name="dang-ky" rows="2"></textarea>
                         </div>
                         <div class="modal_footer">
-                            <button type="submit">Lưu</button> <!-- Nút submit nằm trong form -->
+                            <button type="submit">Lưu</button>
                             <button type="button" class="close">Hủy</button>
                         </div>
                     </form>
@@ -78,22 +74,19 @@
             </div>
             
             
-            <select>
-                <option>2024 - 2025</option>
-                <option>2023 - 2024</option>
-                <option>2022 - 2023</option>
-                <option>2021 - 2022</option>
+            <select id="loaiNamHoc">
+                <option value="2024-2025">2024 - 2025</option>
+                <option value="2023-2024">2023 - 2024</option>
+                <option value="2022-2023">2022 - 2023</option>
+                <option value="2021-2022">2021 - 2022</option>
             </select>
-            <select>
-                <option>Học kỳ 1</option>
-                <option>Học kỳ 2</option>
-            </select>
-            <select>
-                <option>Đồ án cơ sở</option>
-                <option>Đồ án chuyên ngành</option>
+            
+            <select id="loaiDoAnDropdown">
+                <option value="Đồ án cơ sở">Đồ án cơ sở</option>
+                <option value="Đồ án chuyên ngành">Đồ án chuyên ngành</option>
             </select>
         </div>
-        <table>
+        <table id="dataTable">
             <thead>
                 <tr>
                     <th>STT</th>
@@ -101,6 +94,7 @@
                     <th>Mô tả đề tài</th>
                     <th>SL sinh viên/nhóm<br>(2 hoặc 3)</th>
                     <th>Tài liệu tham khảo</th>
+                    <th>Loại đồ án</th>
                     <th>Sinh viên đăng ký<br>(MSSV - Họ và tên)</th>
                     <th>Hành động</th>
                 </tr>
@@ -113,7 +107,7 @@
     <script type="module" src="my_project_GV.js"></script>
     <script src="pop_up.js"></script>
     <script type="module" src="add.js"></script>
-
-    <!-- <script src="add.js"></script> -->
     <script src="main.js"></script>
+    <script type="module" src="loc.js"></script>
+    <script type="module" src="locNam.js"></script>
 </body>
