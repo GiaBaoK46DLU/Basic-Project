@@ -14,42 +14,36 @@ const firebaseConfig = {
   measurementId: "G-JE2TRNHKTM"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app); // Initialize Firestore
+const db = getFirestore(app); 
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('myForm');
 
     form.addEventListener('submit', async (event) => {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
 
         console.log("Form submitted...");
 
-        // Retrieve input values
         const ten = document.getElementById('ten-de-tai').value;
         const motaRaw = document.getElementById('mo-ta').value;
         const sinhvien = document.getElementById('sinh-vien').value;
         const thamkhao = document.getElementById('tham-khao').value;
         const dangkyRaw = document.getElementById('dang-ky').value;
 
-        // Validate required fields
         if (!ten || !motaRaw) {
             alert("Vui lòng điền đầy đủ thông tin Tên đề tài và Mô tả!");
             return;
         }
 
-        // Convert inputs to match Firestore field types
-        const mota = motaRaw.split('\n').filter(line => line.trim() !== ""); // Convert to string array
-        const dangky = dangkyRaw.split('\n').filter(line => line.trim() !== ""); // Convert to string array
-        const soLuongSV = parseInt(sinhvien, 10); // Convert to number
-
+        const mota = motaRaw.split('\n').filter(line => line.trim() !== ""); 
+        const dangky = dangkyRaw.split('\n').filter(line => line.trim() !== ""); 
+        const soLuongSV = parseInt(sinhvien, 10); 
         if (isNaN(soLuongSV)) {
             alert("Số lượng sinh viên phải là một số hợp lệ.");
             return;
         }
 
-        // Data to save
         const newData = {
             Ten: ten,
             MoTa: mota,
@@ -59,18 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-          // Add data to Firestore
           const docRef = await addDoc(collection(db, 'DeTaiTungGV'), newData);
           console.log("Document written with ID: ", docRef.id);
-          
-          // Show success message
           alert("Thêm đề tài thành công!");
-
-          // Close the modal by removing the 'hide' class
           const modal = document.querySelector(".modal");
-          modal.classList.add("hide"); // Or use 'modal.style.display = "none"'
-
-          // Reload the page to refresh the table in my_project_GV.js
+          modal.classList.add("hide");
           window.location.reload();
       } catch (error) {
           console.error("Error adding document: ", error);

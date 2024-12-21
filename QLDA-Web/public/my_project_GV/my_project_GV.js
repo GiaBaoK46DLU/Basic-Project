@@ -52,8 +52,6 @@ document.addEventListener("DOMContentLoaded", async function() {
                     <td class="status">${svdkContent}</td>
                     <td class="button-group">
                         <button class="details-btn">Xem chi tiết</button>
-                        <button class="details-btn">Chỉnh sửa</button>
-                        <button class="details-btn">Xóa</button>
                     </td>   
                 `;
 
